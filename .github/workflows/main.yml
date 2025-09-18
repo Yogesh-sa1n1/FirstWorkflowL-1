@@ -23,3 +23,9 @@ jobs:
 
       - name: print hello world
         run: echo "Hello Yogesh"
+
+      - name: show files
+        run: |
+          pwd
+          ls -la
+          lscpu
