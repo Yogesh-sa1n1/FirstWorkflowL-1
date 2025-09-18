@@ -10,16 +10,16 @@ jobs:
   hello:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Print environment / context
-      run: |
-        echo "Repository Name: $GITHUB_REPOSITORY"
-        echo "Event name: $GITHUB_EVENT_NAME"
-        echo "REF $GITHUB_REF"
-        echo "Github workflow $GITHUB_WORKFLOW"
+      - name: Print environment / context
+        run: |
+          echo "Repository Name: $GITHUB_REPOSITORY"
+          echo "Event name: $GITHUB_EVENT_NAME"
+          echo "REF $GITHUB_REF"
+          echo "Github workflow $GITHUB_WORKFLOW"
 
-    - name: print hello world
-      run: echo "Hello Yogesh"
+      - name: print hello world
+        run: echo "Hello Yogesh"
